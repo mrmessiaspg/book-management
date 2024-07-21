@@ -1,18 +1,11 @@
 const mongoose = require('mongoose');
 
-const BookSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  author: {
-    type: String,
-    required: true,
-  },
-  publisher: {
-    type: String,
-    required: true,
-  },
-});
+const bookSchema = new mongoose.Schema({
+  name: String,
+  author: String,
+  publisher: String
+}, { versionKey: false });  // Desativa o campo `__v`
 
-module.exports = mongoose.model('Book', BookSchema);
+const Book = mongoose.model('Book', bookSchema);
+
+module.exports = Book;
