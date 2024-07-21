@@ -33,7 +33,7 @@ Antes de executar o projeto, você precisa ter os seguintes softwares instalados
 Primeiramente, clone o repositório para o seu ambiente local:
 
 ```bash
-git clone https://github.com/seu-usuario/book-management.git
+git clone https://github.com/mrmessiaspg/book-management.git
 cd book-management
 ```
 
